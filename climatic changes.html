@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Climate Change Simulation</title>
+    <link rel="stylesheet" href="climatic changes.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background-image: url(../environmental\ protection/green3.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="container">
+        <h1>Climate Change Simulation</h1>
+        
+        <!-- Simulation Controls -->
+        <label for="activityLevel">Economic Activity Level:</label>
+        <input type="range" id="activityLevel" min="1" max="10" value="5">
+        <span id="activityValue">5</span>
+
+        <label for="energyMix">Renewable Energy Percentage:</label>
+        <input type="range" id="energyMix" min="0" max="100" value="20">
+        <span id="energyValue">20%</span>
+
+        <!-- Results Display -->
+        <h2>Projected CO2 Emissions (Gt CO2): <span id="co2Emissions">11.5</span></h2>
+        <h2>Projected Temperature Rise (°C): <span id="temperatureRise">0.0</span></h2>
+
+        <!-- Reset Button -->
+        <button id="resetButton">Reset Simulation</button>
+
+        <!-- Chart Display -->
+        <canvas id="emissionsChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="climatic changes.js"></script>
+</body>
+</html>

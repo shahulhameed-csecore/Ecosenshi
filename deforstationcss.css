@@ -1,0 +1,143 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../environmental\ protection/green3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    border-radius: 12px;
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #2d3e50;
+    margin-bottom: 25px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+input[type="range"],
+input[type="number"] {
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+    background: #d1e7ff;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #3498db;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]:hover,
+input[type="number"]:hover {
+    background-color: #e9f7ff;
+}
+
+span {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.results {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.results h2 {
+    margin-bottom: 12px;
+    color: #2c3e50;
+    font-size: 1.2em;
+}
+
+.results h2 span {
+    color: #e74c3c; /* Red for values to emphasize numbers */
+}
+
+.charts {
+    display: flex;
+    flex-direction: column; /* Stack the charts vertically */
+    align-items: center;    /* Center the charts horizontally */
+    gap: 25px;              /* Add space between the charts */
+    margin-top: 30px;
+}
+
+.chart-container {
+    width: 90%;
+    max-width: 800px;
+}
+
+.chart-container.larger-chart {
+    width: 100%; 
+    max-width: 800px;
+    align-items: center;
+}
+
+canvas {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+canvas:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .results h2 {
+        font-size: 1em;
+    }
+
+    .chart-container {
+        width: 100%;
+    }
+}

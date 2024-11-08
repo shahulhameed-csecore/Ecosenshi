@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Water</title>
+    <link rel="stylesheet" href="conservationwatrecss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💧 Save Water, Save Life!</h1>
+            <p>Your actions can make a difference.</p>
+        </header>
+
+        <section class="tips">
+            <h2>Water Conservation Tips</h2>
+            <ul id="tipList"></ul>
+            <input type="text" id="newTipInput" placeholder="Add your own tip..." />
+            <button id="addTipBtn">Add Tip</button>
+            <button id="newTipBtn">Get a New Tip</button>
+        </section>
+
+        <section class="calculator">
+            <h2>Water Usage Calculator</h2>
+            <form id="waterCalcForm">
+                <label for="dailyUsage">Daily Water Usage (liters):</label>
+                <input type="number" id="dailyUsage" placeholder="Enter your daily water usage" required />
+                <label for="days">Days to Calculate:</label>
+                <input type="number" id="days" value="30" required />
+                <button type="submit">Calculate Savings</button>
+            </form>
+            <p id="calcResult" class="hidden"></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 EcoSenshi</p>
+        </footer>
+    </div>
+
+    <script src="conseravationwaterjs.js"></script>
+</body>
+</html>

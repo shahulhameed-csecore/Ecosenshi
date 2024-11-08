@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSenshi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-leaf"></i> EcoSenshi</h1>
+        <nav>
+            <ul>
+                <li><a href="#issues">Environmental Issues</a></li>
+                <li><a href="#tips">Sustainable Living Tips</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#pledge">Take the Pledge</a></li>
+                <li><a href="#newsletter">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="loader">
+        <div class="loader-content">
+            <i class="fas fa-leaf"></i>
+            <h2>EcoSenshi</h2>
+            <p>Loading...</p>
+        </div>
+    </div>
+    
+    <section id="home" class="section">
+        <h2>Why Protect the Environment?</h2>
+        <p>Our planet faces a range of environmental issues including climate change, deforestation, and plastic pollution. Every individual can make a difference by learning more and taking action.</p>
+    </section>
+
+    <section id="issues" class="section">
+        <h2>Environmental Issues</h2>
+        <div class="issue-grid">
+            <div class="issue-card">
+                <h3>Climate Change</h3>
+                <a href="climatic changes.html"><img src="../environmental protection/climatechanges.webp" alt="climate changes" width="250"></a>
+                <p>Global warming is driving extreme weather patterns and sea-level rise.</p>
+             </div>
+            <div class="issue-card">
+                <h3>Plastic Pollution</h3>
+                <a href="plastic pollution.html"><img src="../environmental protection/plastic pollution.jpeg " alt="plastic pollution" width="250"></a>
+                <p>Plastic waste is harming marine life and our ecosystems.</p>
+            </div>
+            <div class="issue-card">
+                <h3>Deforestation</h3>
+                <a href="deforstation.html"><img src="../environmental protection/deforestation.webp" alt="deforestation images" width="250"></a>
+                <p>Forest loss is a significant driver of biodiversity decline and contributes to climate change.</p>
+            </div>
+        </div>
+        <canvas id="chart" width="400" height="200"></canvas>
+    </section>
+
+    <section id="tips" class="section">
+        <h2>Sustainable Living Tips</h2>
+        <div class="tips-grid">
+            <div class="tip">
+                <a href="r3.html" style="text-decoration: none;color: black;">Reduce, reuse, and recycle</a>
+            </div>
+            <div class="tip">
+                <a href="consevationwater.html" style="text-decoration: none;color: black;">Conserve water and energy </a></div>
+            <div class="tip"><a href="locall.html" style="text-decoration: none;color: black;">Buy locally sourced products</a></div>
+            <div class="tip"><a href="plastic pollution.html"style="text-decoration: none;color: black;">Reduce single-use plastic</a></div>
+            <div class="tip"><a href="res.html"style="text-decoration: none;color: black;">Plant trees and support reforestation</a></div>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <h2>Environmental Blog</h2>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <h3>How You Can Reduce Your Carbon Footprint</h3>
+                <p>Simple actions can help reduce your impact on the planet. Find out how you can lower your carbon footprint and live a more sustainable life.</p>
+                <a href="https://www.constellation.com/energy-101/energy-innovation/how-to-reduce-your-carbon-footprint.html">Read more</a>
+            </div>
+            <div class="blog-post">
+                <h3>Understanding the Effects of Deforestation</h3>
+                <p>Learn about the devastating effects of deforestation and how it impacts both the environment and indigenous communities.</p>
+                <a href="https://pachamama.org/effects-of-deforestation">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pledge" class="section">
+        <h2>Take the Pledge to Protect the Environment</h2>
+        <form id="pledgeForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br><br>
+            <button type="submit">Take the Pledge</button>
+        </form>
+        <p id="pledgeMessage"></p>
+    </section>
+
+    <section id="newsletter" class="section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" name="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletterMessage"></p>
+    </section>
+
+    <footer>
+        <p>© 2024 EcoSenshi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce, Reuse, Recycle | Interactive Simulation</title>
+    <link rel="stylesheet" href="r3css.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reduce, Reuse, Recycle</h1>
+            <p>Interactive Waste Management Simulation</p>
+        </header>
+
+        <!-- Information Section -->
+        <section class="info-section">
+            <h2>How You Can Help</h2>
+            <p>Use the sliders below to see the impact of reducing, reusing, and recycling waste in your community. The simulation shows how managing waste effectively can reduce environmental impact.</p>
+        </section>
+
+        <!-- Controls for Reduce, Reuse, Recycle -->
+        <section class="controls">
+            <div class="control-group">
+                <h3>Reduce</h3>
+                <p>How much waste can you reduce?</p>
+                <input type="range" id="reduceSlider" min="0" max="100" value="20">
+                <span id="reduceValue">20%</span>
+            </div>
+            <div class="control-group">
+                <h3>Reuse</h3>
+                <p>How much can you<br> reuse?</p>
+                <input type="range" id="reuseSlider" min="0" max="100" value="30">
+                <span id="reuseValue">30%</span>
+            </div>
+            <div class="control-group">
+                <h3>Recycle</h3>
+                <p>How much can you<br> recycle?</p>
+                <input type="range" id="recycleSlider" min="0" max="100" value="40">
+                <span id="recycleValue">40%</span>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results">
+            <h2>Waste Management Impact</h2>
+            <div class="results-grid">
+                <div class="result">
+                    <h4>Total Waste Managed</h4>
+                    <p><span id="totalWaste">300</span> tons/year</p>
+                </div>
+                <div class="result">
+                    <h4>Waste Reduced</h4>
+                    <p><span id="wasteReduced">60</span> tons</p>
+                </div>
+                <div class="result">
+                    <h4>Waste Reused</h4>
+                    <p><span id="wasteReused">90</span> tons</p>
+                </div>
+                <div class="result">
+                    <h4>Waste Recycled</h4>
+                    <p><span id="wasteRecycled">120</span> tons</p>
+                </div>
+            </div>
+
+            <h3>Waste Reduction Progress</h3>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </section>
+
+        <!-- Visualization Charts -->
+        <section class="charts-section">
+            <canvas id="wasteChart" width="400" height="200"></canvas>
+        </section>
+    </div>
+
+    <script src="r3js.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Local: Locally Sourced Products</title>
+    <link rel="stylesheet" href="locallycss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><center>🌱 Support Local: Locally Sourced<br>Products</center></h1>
+            <p>Discover the best of what your community has to offer!</p>
+            <input type="text" id="searchBar" placeholder="Search for products..." />
+            <button id="loginBtn">Log In</button>
+        </header>
+
+        <section class="product-gallery">
+            <h2>Our Products</h2>
+            <div id="productList" class="product-list"></div>
+        </section>
+
+        <section class="feedback">
+            <h2>We'd Love Your Feedback!</h2>
+            <form id="feedbackForm" class="hidden">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="email" id="email" placeholder="Your Email" required />
+                <textarea id="message" placeholder="Your Feedback" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <button id="toggleFeedbackBtn">Give Feedback</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 EcoSenshi</p>
+        </footer>
+
+        <!-- Product Detail Modal -->
+        <div id="productModal" class="modal hidden">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <img id="modalImage" src="" alt="" />
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <button id="addFeedbackBtn">Give Feedback</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="localyjs.js"></script>
+</body>
+</html>

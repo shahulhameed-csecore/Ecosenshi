@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Deforestation Simulation</title>
+    <link rel="stylesheet" href="deforstationcss.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Deforestation Simulation</h1>
+
+        <!-- Input Controls for Simulation -->
+        <div class="controls">
+            <label for="deforestationRate">Deforestation Rate (Million Hectares/Year):</label>
+            <input type="range" id="deforestationRate" min="0" max="100" value="30">
+            <span id="deforestationValue">30</span> million hectares/year
+
+            <label for="reforestationRate">Reforestation Rate (Million Hectares/Year):</label>
+            <input type="range" id="reforestationRate" min="0" max="50" value="10">
+            <span id="reforestationValue">10</span> million hectares/year
+
+            <label for="industrialActivity">Industrial Activity Level (0-100):</label>
+            <input type="range" id="industrialActivity" min="0" max="100" value="50">
+            <span id="industrialActivityValue">50</span>%
+
+            <label for="years">Simulation Duration (Years):</label>
+            <input type="number" id="years" min="1" max="50" value="10">
+        </div>
+
+        <!-- Display the Results of the Simulation -->
+        <div class="results">
+            <h2>Yearly Forest Cover Lost: <span id="forestLoss">20</span> million hectares</h2>
+            <h2>Total CO2 Emissions: <span id="co2Emissions">10.00</span> Gt CO2</h2>
+            <h2>Annual Carbon Sequestration Lost: <span id="carbonLoss">5.00</span> Gt CO2/year</h2>
+            <h2>Predicted Temperature Rise: <span id="temperatureRise">0.02</span> °C</h2>
+            <h2>Biodiversity Loss: <span id="biodiversityLoss">25</span> species/year</h2>
+        </div>
+
+        <!-- Visualization Charts -->
+        <div class="charts">
+            <div class="chart-container">
+                <canvas id="forestChart" width="400" height="200"></canvas>
+            </div>
+            <div class="chart-container larger-chart">
+                <canvas id="impactChart" width="600" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="deforstationjs.js"></script>
+</body>
+</html>
+

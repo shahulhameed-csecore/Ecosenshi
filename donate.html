@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to EcoSenshi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-leaf"></i> Support EcoSenshi’s Mission</h1>
+        <p>Your contribution helps us protect the environment and spread awareness. Every donation goes directly towards initiatives that promote sustainability and conservation.</p>
+    </header>
+    <center>
+
+    <section class="donation-options">
+        <h2>Choose Your Donation Amount</h2>
+        <div class="donation-tiers">
+            <div class="tier">
+                <h3>Seed Supporter</h3>
+                <p>$10</p>
+                <button onclick="selectAmount(10)">Donate $10</button>
+            </div>
+            <div class="tier">
+                <h3>Eco Warrior</h3>
+                <p>$25</p>
+                <button onclick="selectAmount(25)">Donate $25</button>
+            </div>
+            <div class="tier">
+                <h3>Planet Protector</h3>
+                <p>$50</p>
+                <button onclick="selectAmount(50)">Donate $50</button>
+            </div>
+            <div class="tier">
+                <h3>Green Guardian</h3>
+                <p>$100</p>
+                <button onclick="selectAmount(100)">Donate $100</button>
+            </div>
+            <div class="tier">
+                <h3>Custom Amount</h3>
+                <input type="number" id="customAmount" placeholder="Enter amount">
+                <button onclick="selectCustomAmount()">Donate Custom Amount</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="donation-form">
+        <h2>Complete Your Donation</h2>
+        <form id="donationForm" action="process_donation.php" method="POST">
+            <label for="donorName">Name:</label>
+            <input type="text" id="donorName" name="donorName" required>
+            
+            <label for="donorEmail">Email:</label>
+            <input type="email" id="donorEmail" name="donorEmail" required>
+            
+            <label for="donationAmount">Donation Amount:</label>
+            <input type="number" id="donationAmount" name="donationAmount" readonly>
+            
+            <button type="submit">Donate Now</button>
+        </form>
+    </section>
+    </center>
+
+    <footer>
+        <p>Thank you for supporting EcoSenshi. Together, we can make a difference!</p>
+        <p>© 2024 EcoSenshi. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Function to set selected donation amount
+        function selectAmount(amount) {
+            document.getElementById('donationAmount').value = amount;
+        }
+        
+        // Function to set custom donation amount
+        function selectCustomAmount() {
+            const customAmount = document.getElementById('customAmount').value;
+            document.getElementById('donationAmount').value = customAmount ? customAmount : 0;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Pollution Simulation</title>
+    <link rel="stylesheet" href="plastic pollutioncss.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Plastic Pollution Simulation</h1>
+
+        <!-- Controls -->
+        <div class="controls">
+            <label for="plasticProduction">Annual Plastic Production (Million Tons):</label>
+            <input type="range" id="plasticProduction" min="10" max="500" value="300">
+            <span id="productionValue">300</span> million tons
+
+            <label for="recyclingRate">Recycling Rate (%):</label>
+            <input type="range" id="recyclingRate" min="0" max="100" value="20">
+            <span id="recyclingValue">20%</span>
+
+            <label for="mismanagementRate">Mismanagement Rate (%):</label>
+            <input type="range" id="mismanagementRate" min="0" max="50" value="15">
+            <span id="mismanagementValue">15%</span>
+        </div>
+
+        <!-- Display Results -->
+        <div class="results">
+            <h2>Plastic Waste Mismanaged: <span id="wasteMismanaged">45</span> million tons</h2>
+            <h2>Plastic in Oceans: <span id="plasticOceans">6.75</span> million tons</h2>
+        </div>
+
+        <!-- Chart -->
+        <canvas id="pollutionChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="plastic pollutionjs.js"></script>
+</body>
+</html>

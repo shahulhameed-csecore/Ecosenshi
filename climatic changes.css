@@ -1,0 +1,91 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Input labels */
+label {
+    display: block;
+    margin: 20px 0 5px;
+    font-size: 1.1em;
+}
+
+/* Range input styling */
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Range slider thumb styling */
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #007BFF;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+#activityValue, #energyValue, #co2Emissions, #temperatureRise {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+#co2Emissions {
+    color: #E74C3C;
+}
+
+#temperatureRise {
+    color: #F39C12;
+}
+
+/* Reset button styling */
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: #0056b3;
+}
+
+/* Chart styling */
+canvas {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
